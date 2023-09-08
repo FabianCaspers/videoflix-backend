@@ -29,6 +29,19 @@ CORS_ALLOWED_ORIGINS = [
     'http://localhost:4200',
 ]
 
+CSRF_TRUSTED_ORIGINS = [
+    'http://localhost:4200',
+]
+
+CSRF_COOKIE_NAME = "csrftoken"
+
+CSRF_COOKIE_HTTPONLY = False
+
+CORS_ALLOW_CREDENTIALS = True
+
+
+
+
 CORS_ALLOW_HEADERS = [
     'accept',
     'accept-encoding',
@@ -153,3 +166,14 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+REST_FRAMEWORK = {
+    'DEFAULT_RENDERER_CLASSES': (
+        'rest_framework.renderers.JSONRenderer',
+    )
+}
+
+AUTHENTICATION_BACKENDS = [
+    'django.contrib.auth.backends.ModelBackend',
+]
+
