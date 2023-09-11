@@ -67,9 +67,6 @@ def confirm_email(request, uidb64, token):
         return HttpResponse('Der Aktivierungslink ist ungültig!')
 
 
-
-
-
 @api_view(['POST'])
 def user_login_view(request):
     email = request.data.get('email')
