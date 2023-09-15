@@ -84,11 +84,13 @@ INSTALLED_APPS = [
     'corsheaders',
     'authentication',
     'rest_framework.authtoken',
-    'content'
+    'content.apps.ContentConfig',
+    'debug_toolbar'
     
 ]
 
 MIDDLEWARE = [
+    'debug_toolbar.middleware.DebugToolbarMiddleware',
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -98,6 +100,21 @@ MIDDLEWARE = [
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
+INTERNAL_IPS = [
+    "127.0.0.1",
+]
+
+CACHES = {
+    "default": {
+        "BACKEND": "django_redis.cache.RedisCache",
+        "LOCATION": "redis://127.0.0.1:6379/1",
+        "OPTIONS": {
+            "CLIENT_CLASS": "django_redis.client.DefaultClient"
+        },
+        "KEY_PREFIX": "videoflix"
+    }
+}
 
 ROOT_URLCONF = 'Videoflix_Backend.urls'
 
