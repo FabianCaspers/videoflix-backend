@@ -27,11 +27,11 @@ SECRET_KEY = 'django-insecure-x(x*=4_#zhfc&&ic5#w!9!*)-qw9#u@q0$dw-u)a#zlbteiqu8
 DEBUG = True
 
 CORS_ALLOWED_ORIGINS = [
-    'http://localhost:4200', 'fabianvideoflix.pythonanywhere.com'
+    'http://localhost:4200', 'https://fabianvideoflix.pythonanywhere.com'
 ]
 
 CSRF_TRUSTED_ORIGINS = [
-    'http://localhost:4200', 'fabianvideoflix.pythonanywhere.com'
+    'http://localhost:4200', 'https://fabianvideoflix.pythonanywhere.com'
 ]
 
 CSRF_COOKIE_NAME = "csrftoken"
