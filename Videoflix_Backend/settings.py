@@ -85,12 +85,10 @@ INSTALLED_APPS = [
     'authentication',
     'rest_framework.authtoken',
     'content.apps.ContentConfig',
-    'debug_toolbar'
     
 ]
 
 MIDDLEWARE = [
-    'debug_toolbar.middleware.DebugToolbarMiddleware',
     'corsheaders.middleware.CorsMiddleware',
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
