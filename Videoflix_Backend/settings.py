@@ -212,5 +212,5 @@ EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 EMAIL_HOST_USER = 'fabian.caspers1308@gmail.com'
-EMAIL_HOST_PASSWORD = 'lvnxbsyxaerganel'
+EMAIL_HOST_PASSWORD = 'ljyq jcvv edwx atub'
 
