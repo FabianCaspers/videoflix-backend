@@ -65,8 +65,12 @@ CORS_ALLOW_METHODS = [
 ]
 
 
-ALLOWED_HOSTS = ['*']
-
+ALLOWED_HOSTS = [
+    '127.0.0.1',
+    'localhost',
+    'fabianvideoflix.pythonanywhere.com',
+    'testen.fabiancaspers.com',
+]
 
 
 MEDIA_ROOT = os.path.join(BASE_DIR, 'media')
