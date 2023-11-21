@@ -35,7 +35,7 @@ def register(request):
             mail_subject = 'Bestätigen Sie Ihre E-Mail-Adresse.'
             message = (f"Bitte klicken Sie auf den folgenden Link, um Ihre E-Mail zu bestätigen und Ihren Account zu aktivieren. "
                        f"Nach der Aktivierung werden Sie automatisch zur Login-Seite weitergeleitet: "
-                       f"https://fabianvideoflix.pythonanywhere.com/confirm?uid={uid}&token={token}")
+                       f"https://teste.fabiancaspers.com/confirm?uid={uid}&token={token}")
             
             send_mail(mail_subject, message, 'fabian.caspers1308@gmail.com', [user.email], fail_silently=False)
             
